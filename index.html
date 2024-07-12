@@ -1,298 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="estatment" content="Gcap Aomthong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css">
-    <meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no, maximum-scale=1.0, shrink-to-fit=no'>
-    <!-- ========== Page Title ========== -->
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/font-trade-agreement.css">
-    <title>ประวัติรายการฝาก/ถอน</title>
-    <style>
-        body, html {
-            padding-top: 15px;
-            font-size: 16px;
-            font-family: 'SukhumvitSetMedium';
-            box-sizing: border-box;
-        }
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-        a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-            a:hover {
-                color: #0e235c;
-            }
-
-        .gcaphead {
-            background-color: #0e235c;
-        }
-
-        .gpaddtop20 {
-            padding-top: 20px;
-            ;
-        }
-
-        .content-section {
-            margin: auto;
-            max-width: 420px;
-            background-color: #ffffff;
-            /*border: 1px solid #c2c2c2;*/
-            border-radius: 10px;
-            padding: 10px;
-            height: 100%;
-        }
-
-        .content-box {
-            margin: auto;
-            max-width: 400px;
-            background-color: #ffffff;
-            color: #ffffff;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        .content-title {
-            text-align: center;
-            color: #c6b08b;
-            font-size: 20px;
-        }
-
-        .box-content {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .content-white {
-            padding-top: 50px;
-            background-color: #ffffff;
-            height: auto;
-            display: block;
-        }
-
-        .box-white {
-            display: block;
-            border-radius: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
-            background-color: #ffffff;
-            box-shadow: -1px -1px 3px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .gimg {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-        .text-title {
-            font-size: 20px;
-            color: #0e235c;
-        }
-
-        .deposit-amount {
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .txtblue {
-            color: #0e235c;
-            text-align: left;
-        }
-
-        .txtblack {
-            color: #000000;
-            text-align: left;
-        }
-
-        .txtsize20 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .txtsize16 {
-            font-size: 16px;
-        }
-
-        .txtsize14 {
-            font-size: 14px;
-        }
-
-        .txtsize12 {
-            font-size: 12px;
-        }
-
-        .gcap_newline {
-            clear: both;
-            vertical-align: bottom;
-            width: 100%;
-            height: 25px;
-        }
-
-        .paddingtop5 {
-            padding-top: 5px;
-        }
-
-        .paddingtop10 {
-            padding-top: 10px;
-        }
-
-        .paddingtop15 {
-            padding-top: 15px;
-        }
-
-        .gcap3col {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .gcap-text-center {
-            text-align: center;
-        }
-
-        .gcap-line-height {
-            border: 1px solid #c2c2c2;
-        }
-
-        .bank-txt-color {
-            color: #838383;
-        }
-
-        .money-txt-color {
-            color: #0e235c;
-            font-weight: 600;
-        }
-
-        .mrgtop10 {
-            margin-top: -30px;
-        }
-
-        .bt {
-            border: 2px solid red;
-        }
-
-        .ta1 {
-            width: 100%;
-            border-collapse: collapse;
-            display: block;
-        }
-
-        .taBody {
-            display: block;
-            width: auto;
-        }
-        .taRow {
-            display: flex;
-            width: auto;
-        }
-        .justify-end {
-            justify-content: end;
-        }
-        .txt-end {
-            text-align: end;
-        }
-        .txt-aref {
-            color: #0e235c;
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: underline;
-        }
-    </style>
-</head>
 <body>
-        <section id="trade" class="content-section">
 
-            <div class="txtblack gcap-text-center txtsize16 mrgtop10">ประวัติรายการฝาก/ถอน</div>
-            <div class="table1">
-                    <div class="taRow">
-                        <div class="taBody" style="width: 15%;">
-                            <img src="iconbank/Icon-aompic.png" widt="50px" height="42px">
-                        </div>
-                        <div class="taBody" style="width: 85%;margin-top: 10px;">
-                            <div class="money-txt-color">สิทธิพิเศษ</div>
-                            <div class="txtsize12 bank-txt-color">ท่านได้เข้าร่วมกิจกรรมออมทอง 1 ปี มี 1 บาท</div>
-                            <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                                <div>
-                                    รับทองคำสมทบ
-                                </div>
-                                <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                    0.5 กรัม
-                                </div>
-                            </div>
-                            <div class="txtsize12 bank-txt-color">*เงื่อนไขเป็นไปตามที่บริษัทกำหนด</div>
-                        </div>
-                    </div>
-            </div>
-            <div class="gcap-line-height"></div>
-            <div class="table1">
-                <div class="taRow">
-                    <div class="taBody" style="width: 15%;">
-                        <img src="iconbank/GoldD.png" widt="50px" height="42px">
-                    </div>
-                    <div class="taBody" style="width: 85%;margin-top: 10px;">
-                        <div class="money-txt-color">รายการออมทอง</div>
-                        <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                            <div>
-                                ยอดรับเงินออม
-                            </div>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                2500
-                            </div>
-                        </div>
-                        <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                            <div>
-                                ปริมาณทองที่ได้รับ
-                            </div>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                2.5 กรัม
-                            </div>
-                        </div>
-                        <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                            <div>
-                                ราคาทองเข้าซื้อ
-                            </div>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                               35,000 บาท
-                            </div>
-                        </div>
-                        <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                            <div>
-                                วันที่ทำรายการ
-                            </div>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                10/10/2023
-                            </div>
-                        </div>
-                        <div class="txtsize12 bank-txt-color" style="display: flex; justify-content: space-between;">
-                            <div>
-                                เวลาทำรายการ
-                            </div>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                10.10 น.
-                            </div>
-                        </div>
-                        <div class="txt-end">
-                            <a class="txt-aref" href="www.google.com">ดาวน์โหลดใบเสร็จ</a>
-                            <div class="txtsize12 bank-txt-color" style="text-align: right;">
-                                การเปิดเอกสารให้ใช้หมายเลขมือถือ
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gcap-line-height"></div>
-        </section>
-        <script src="assets/js/jquery-1.12.4.min.js"></script>
-        <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script>
+        var app = angular.module("myShoppingList", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.products = ["Milk", "Bread", "Cheese"];
+            $scope.addItem = function () {
+                $scope.products.push($scope.addMe);
+            }
+            $scope.removeItem = function (x) {
+                $scope.products.splice(x, 1);
+            }
+        });
+    </script>
 
-    </body>
+    <div ng-app="myShoppingList" ng-controller="myCtrl">
+        <ul>
+            <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">×</span></li>
+        </ul>
+        <input ng-model="addMe">
+        <button ng-click="addItem()">Add</button>
+    </div>
+
+    <p>Click the little x to remove an item from the shopping list.</p>
+
+</body>
+
 </html>
